@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hermes Software</title>
+<meta name="description" content="Free, private, open-source tools built around the Socratic method: Moly and Socrates.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<nav><a href="index.html">Hermes Software</a> <a href="support.html">Support</a> <a href="https://github.com/Nireus79">GitHub</a></nav>
+<h1>Hermes Software</h1>
+<p class="lead">Free, private, open-source tools that ask a better question first. Your data stays with you, and you bring your own AI key.</p>
+
+<div id="products"></div>
+<noscript>
+<div class="card">
+<h2 style="margin-top:0">Moly</h2>
+<p>Better thinking before you hit send. <a href="https://nireus79.github.io/Moly/">Website</a> · <a href="https://github.com/Nireus79/Moly">Source code</a></p>
+</div>
+<div class="card">
+<h2 style="margin-top:0">Socrates</h2>
+<p>A conversation with artificial Greek philosophers. <a href="https://github.com/Nireus79/Socrates-ai">Source code</a></p>
+</div>
+</noscript>
+
+<h2>Research and libraries</h2>
+<ul id="research"></ul>
+
+<h2>Support</h2>
+<p>Everything here is free. If it helps you, you can <a id="sponsor" href="https://github.com/sponsors/Nireus79">sponsor the work</a>. Questions and problems: <a id="contact" href="mailto:Hermes_creative@proton.me">Hermes_creative@proton.me</a>.</p>
+
+<footer>Published by Hermes Software. <a href="products.json">products.json</a> is the single list that this page and the links in the apps follow.</footer>
+</main>
+<script>
+fetch('products.json').then(function (r) { return r.json(); }).then(function (d) {
+  var box = document.getElementById('products');
+  d.products.forEach(function (p) {
+    var c = document.createElement('div'); c.className = 'card';
+    var h = document.createElement('h2'); h.style.marginTop = '0'; h.textContent = p.name; c.appendChild(h);
+    var t = document.createElement('p'); t.className = 'lead'; t.textContent = p.tagline; c.appendChild(t);
+    var x = document.createElement('p'); x.textContent = p.description; c.appendChild(x);
+    var s = document.createElement('p'); s.textContent = p.status + ' · ' + p.price; s.style.color = 'var(--muted)'; c.appendChild(s);
+    var l = document.createElement('p');
+    p.links.forEach(function (k) {
+      var a = document.createElement('a'); a.href = k.url; a.textContent = k.text;
+      if (k.primary) a.className = 'btn'; else a.style.marginRight = '1rem';
+      l.appendChild(a);
+    });
+    c.appendChild(l); box.appendChild(c);
+  });
+  var r = document.getElementById('research');
+  d.research.forEach(function (k) {
+    var li = document.createElement('li'); var a = document.createElement('a'); a.href = k.url; a.textContent = k.text; li.appendChild(a); r.appendChild(li);
+  });
+  document.getElementById('sponsor').href = d.sponsor;
+  var m = document.getElementById('contact'); m.href = 'mailto:' + d.contact; m.textContent = d.contact;
+}).catch(function () {});
+</script>
+</body>
+</html>

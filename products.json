@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "publisher": "Hermes Software",
+  "contact": "Hermes_creative@proton.me",
+  "pricing": "Free",
+  "sponsor": "https://github.com/sponsors/Nireus79",
+  "products": [
+    {
+      "id": "moly",
+      "name": "Moly",
+      "tagline": "Better thinking before you hit send.",
+      "description": "A Socratic communication coach. Moly asks the one question that matters, then helps you write. It never decides for you. Private by design: your conversations stay on your computer, with a model on your computer (Ollama) or your own Claude or OpenAI key. No account, no analytics.",
+      "status": "Beta",
+      "price": "Free, open source (MIT)",
+      "links": [
+        { "text": "Download for your computer", "url": "https://nireus79.github.io/Moly/download.html", "primary": true },
+        { "text": "Firefox add-on", "url": "https://addons.mozilla.org/en-US/firefox/addon/moly-ai/" },
+        { "text": "Android beta (APK)", "url": "https://github.com/Nireus79/Moly/releases/tag/mobile-v0.1.0-beta.5" },
+        { "text": "Website and privacy", "url": "https://nireus79.github.io/Moly/" },
+        { "text": "Source code", "url": "https://github.com/Nireus79/Moly" }
+      ]
+    },
+    {
+      "id": "socrates-ai",
+      "name": "Socrates",
+      "tagline": "A conversation with artificial Greek philosophers.",
+      "description": "Socrates, Diogenes, Plato and Aristotle, each revived in today's world and speaking as himself. They ask hard questions, do not give verdicts, and remember what you told them, in your own words, which you can see and delete. Runs on your own AI provider key, with no server of ours.",
+      "status": "Early build, not released yet",
+      "price": "Free, open source (MIT)",
+      "links": [
+        { "text": "Source code", "url": "https://github.com/Nireus79/Socrates-ai", "primary": true }
+      ]
+    }
+  ],
+  "research": [
+    { "text": "Socrates (proof of concept): a Python multi-agent platform that clarifies a project before it is built", "url": "https://github.com/Nireus79/Socrates" },
+    { "text": "Eleven Socratic libraries on PyPI", "url": "https://pypi.org/user/Nireus79/" }
+  ]
+}
