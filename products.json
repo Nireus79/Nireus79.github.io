@@ -13,11 +13,35 @@
       "status": "Beta",
       "price": "Free, open source (MIT)",
       "links": [
-        { "text": "Download for your computer", "url": "https://nireus79.github.io/Moly/download.html", "primary": true },
-        { "text": "Firefox add-on", "url": "https://addons.mozilla.org/en-US/firefox/addon/moly-ai/" },
-        { "text": "Android beta (APK)", "url": "https://github.com/Nireus79/Moly/releases/tag/mobile-v0.1.0-beta.5" },
-        { "text": "Website and privacy", "url": "https://nireus79.github.io/Moly/" },
-        { "text": "Source code", "url": "https://github.com/Nireus79/Moly" }
+        {
+          "text": "Download for your computer",
+          "url": "https://nireus79.github.io/Moly/download.html",
+          "primary": true
+        },
+        {
+          "text": "Firefox add-on",
+          "url": "https://addons.mozilla.org/en-US/firefox/addon/moly-ai/"
+        },
+        {
+          "text": "Chrome extension",
+          "url": "https://chromewebstore.google.com/detail/moly/edipepikljeecldenjpjgdbajanljkfh"
+        },
+        {
+          "text": "Edge add-on",
+          "url": "https://microsoftedge.microsoft.com/addons/detail/moly/hblmajipjgkocfkakoogphkpjejahdef"
+        },
+        {
+          "text": "Android beta (APK)",
+          "url": "https://github.com/Nireus79/Moly/releases/tag/mobile-v0.1.0-beta.5"
+        },
+        {
+          "text": "Website and privacy",
+          "url": "https://nireus79.github.io/Moly/"
+        },
+        {
+          "text": "Source code",
+          "url": "https://github.com/Nireus79/Moly"
+        }
       ]
     },
     {
@@ -28,12 +52,22 @@
       "status": "Early build, not released yet",
       "price": "Free, open source (MIT)",
       "links": [
-        { "text": "Source code", "url": "https://github.com/Nireus79/Socrates-ai", "primary": true }
+        {
+          "text": "Source code",
+          "url": "https://github.com/Nireus79/Socrates-ai",
+          "primary": true
+        }
       ]
     }
   ],
   "research": [
-    { "text": "Socrates (proof of concept): a Python multi-agent platform that clarifies a project before it is built", "url": "https://github.com/Nireus79/Socrates" },
-    { "text": "Eleven Socratic libraries on PyPI", "url": "https://pypi.org/user/Nireus79/" }
+    {
+      "text": "Socrates (proof of concept): a Python multi-agent platform that clarifies a project before it is built",
+      "url": "https://github.com/Nireus79/Socrates"
+    },
+    {
+      "text": "Eleven Socratic libraries on PyPI",
+      "url": "https://pypi.org/user/Nireus79/"
+    }
   ]
 }
